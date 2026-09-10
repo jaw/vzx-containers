@@ -404,13 +404,6 @@ int main()
 {
   initialize_test_suite();
 
-  auto* other_integers = static_cast<int32_t*>(malloc(sizeof(int32_t) * 16));
-  test_assert(other_integers != nullptr);
-
-  auto* some_integers = new int32_t[16];
-  test_assert(some_integers != nullptr);
-  // add bits to upper parts of pointer
-
   test_ma_vector_basic();
   test_ma_vector_allocation_and_size();
   test_ma_vector_access();
