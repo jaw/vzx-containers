@@ -238,12 +238,16 @@ static void legacy_test()
 
       test_struct()
       {
+        #ifndef VZX_ASTREE
         printf("constructor run\n");
+        #endif
       }
 
       ~test_struct()
       {
+        #ifndef VZX_ASTREE
         printf("destructor run with a: %d\n", a);
+        #endif
         a_value_when_destructor_run = a;
       }
 
@@ -325,7 +329,9 @@ static void legacy_test()
 
       holder()
       {
+        #ifndef VZX_ASTREE
         printf("Holder constructor run\n");
+        #endif
       }
     };
     vzx_nw_vector <holder> items;
