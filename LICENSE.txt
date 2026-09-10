@@ -1,0 +1,2 @@
+vzx-containers is © 2026 Vovoid Media Technologies AB and is made available
+under the terms of the MIT license (see LICENSES/MIT.txt).
